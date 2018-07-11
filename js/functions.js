@@ -1,10 +1,12 @@
-const numbers = [1,2,3,4,5,6,7]
+for (let i = 1; i <= 100; i++) {
 
-for (let i = 0; i < numbers.length; i++) {
-    const currentNumber = numbers[i]
-
-    if (currentNumber % 2 === 0) {
-        console.log(currentNumber)
+     if ([i] % 5 === 0 && [i] % 7 === 0) {
+        console.log('Chicken Monkey')
+    } else if ([i] % 7 === 0){
+        console.log('Monkey')
+    } else if ([i] % 5 === 0) {
+        console.log('Chicken')
+    } else {
+        console.log([i])
     }
-
 }
